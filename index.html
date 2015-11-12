@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Практикум</title>
+        <link rel="stylesheet" type="text/css" href="lib/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="lib/jquery-2.1.4.min.js"></script>
+        <script src="lib/semantic.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+<body>
+    <div class="ui center aligned fixed menu page grid">
+        <div class="column">
+            <h2 class="ui teal header">
+                <div class="content">
+                    Информация за времето
+                </div>
+            </h2>
+            <div class="ui large form">
+                <div class="ui piled segment">
+                    <div class="field">
+                        <div class="ui selection dropdown">
+                            <input name="options" type="hidden">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Опции</div>
+                            <div class="menu">
+                                <div class="item" data-value="1">Температура, влажност</div>
+                                <div class="item" data-value="2">Температура, влажност, скорост на вятъра</div>
+                                <div class="item" data-value="3">Температура, влажност, атмосферно налягане</div>
+                                <div class="item" data-value="4">Пълна информация</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="marker icon"></i>
+                            <input type="text" name="location" placeholder="Град">
+                        </div>
+                    </div>
+
+                    <div class="ui fluid large teal submit button">Добави</div>
+                </div>
+
+                <div class="ui error message"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="fixedBottom">
+        <div id="cardContainer" class="ui three column padded page grid">
+        </div>
+    </div>
+</body>
+
+</html>
